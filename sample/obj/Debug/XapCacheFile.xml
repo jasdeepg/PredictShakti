@@ -1,0 +1,11 @@
+﻿<xapCache source="C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\DataVisualizationOnWindowsPhone.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="4/19/2012 5:22:53 PM">
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/18/2012 11:25:42 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\Background.png" archivePath="Background.png" lastWriteTime="4/18/2012 11:25:39 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="4/18/2012 11:25:39 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\DataVisualizationOnWindowsPhone.dll" archivePath="DataVisualizationOnWindowsPhone.dll" lastWriteTime="4/19/2012 5:22:52 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\packages\amChartsQuickCharts.1.1\lib\sl3-wp\AmCharts.Windows.QuickCharts.WP.dll" archivePath="AmCharts.Windows.QuickCharts.WP.dll" lastWriteTime="4/18/2012 11:28:58 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\System.Windows.Controls.DataVisualization.Toolkit.dll" archivePath="System.Windows.Controls.DataVisualization.Toolkit.dll" lastWriteTime="4/18/2012 11:25:41 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="4/18/2012 11:25:41 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="4/18/2012 11:25:39 PM" />
+  <file source="C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/18/2012 11:31:01 PM" />
+</xapCache>

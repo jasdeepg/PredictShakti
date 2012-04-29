@@ -1,0 +1,354 @@
+﻿<!--
+// Copyright (C) Microsoft Corporation. All Rights Reserved.
+// This code released under the terms of the Microsoft Public License
+// (Ms-PL, http://opensource.org/licenses/ms-pl.html).
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:datavis="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+    xmlns:charting="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+    xmlns:chartingprimitives="clr-namespace:System.Windows.Controls.DataVisualization.Charting.Primitives;assembly=System.Windows.Controls.DataVisualization.Toolkit">
+
+    <!-- Chart Template for Portrait orientation -->
+    <ControlTemplate x:Key="PhoneChartPortraitTemplate" TargetType="charting:Chart">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <datavis:Title
+                Content="{TemplateBinding Title}"
+                Style="{TemplateBinding TitleStyle}"/>
+            <datavis:Legend x:Name="Legend"
+                Grid.Row="2"
+                Header="{TemplateBinding LegendTitle}"
+                Style="{TemplateBinding LegendStyle}">
+                <datavis:Legend.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </datavis:Legend.ItemsPanel>
+                <datavis:Legend.Template>
+                    <ControlTemplate TargetType="datavis:Legend">
+                        <Border
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="2">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <datavis:Title
+                                    Grid.Row="0"
+                                    x:Name="HeaderContent"
+                                    Content="{TemplateBinding Header}"
+                                    ContentTemplate="{TemplateBinding HeaderTemplate}"
+                                    Style="{TemplateBinding TitleStyle}"/>
+                                <ScrollViewer
+                                    Grid.Row="1"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    VerticalScrollBarVisibility="Disabled"
+                                    BorderThickness="0"
+                                    Padding="0"
+                                    IsTabStop="False">
+                                    <ItemsPresenter
+                                        x:Name="Items"
+                                        Margin="10,0,10,10"/>
+                                </ScrollViewer>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </datavis:Legend.Template>
+            </datavis:Legend>
+            <chartingprimitives:EdgePanel
+                Grid.Column="0"
+                Grid.Row="1"
+                x:Name="ChartArea"
+                Style="{TemplateBinding ChartAreaStyle}">
+                <Grid
+                    Canvas.ZIndex="-1"
+                    Style="{TemplateBinding PlotAreaStyle}" />
+            </chartingprimitives:EdgePanel>
+        </Grid>
+    </ControlTemplate>
+
+    <!-- Chart Template for Landscape orientation -->
+    <ControlTemplate x:Key="PhoneChartLandscapeTemplate" TargetType="charting:Chart">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <datavis:Title
+                Grid.ColumnSpan="2"
+                Content="{TemplateBinding Title}"
+                Style="{TemplateBinding TitleStyle}"/>
+            <datavis:Legend x:Name="Legend"
+                Grid.Column="1"
+                Grid.Row="1"
+                Header="{TemplateBinding LegendTitle}"
+                Style="{TemplateBinding LegendStyle}"/>
+            <chartingprimitives:EdgePanel
+                Grid.Column="0"
+                Grid.Row="1"
+                x:Name="ChartArea"
+                Style="{TemplateBinding ChartAreaStyle}">
+                <Grid
+                    Canvas.ZIndex="-1"
+                    Style="{TemplateBinding PlotAreaStyle}"/>
+            </chartingprimitives:EdgePanel>
+        </Grid>
+    </ControlTemplate>
+
+    <!-- Chart Style for Phone -->
+    <Style x:Key="PhoneChartStyle" TargetType="charting:Chart">
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Palette">
+            <Setter.Value>
+                <datavis:ResourceDictionaryCollection>
+                    <!-- Blue -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF3A70A3"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Red -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FFA53B3B"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Light Green -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF8AA361"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Yellow -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FFF4D90C"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Indigo -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF5442A3"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Magenta -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FFA346A1"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Dark Green -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF26996D"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Gray Shade -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF8C8C8C"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Blue -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF037BB7"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Brown -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF8E8A54"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Cyan -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF74B3C1"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Special Blue -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF0F4D7F"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Gray Shade 2 -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF7F7F7F"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Gray Shade 3 -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FFB7B7B7"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                    <!-- Gray Shade 4 -->
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="Background" Color="#FF9E9E9E"/>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="{StaticResource Background}" />
+                        </Style>
+                        <Style x:Key="DataShapeStyle" TargetType="Shape">
+                            <Setter Property="Stroke" Value="{StaticResource Background}" />
+                            <Setter Property="StrokeThickness" Value="2" />
+                            <Setter Property="StrokeMiterLimit" Value="1" />
+                            <Setter Property="Fill" Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                </datavis:ResourceDictionaryCollection>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="TitleStyle">
+            <Setter.Value>
+                <Style TargetType="datavis:Title">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeExtraExtraLarge}"/>
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="LegendStyle">
+            <Setter.Value>
+                <Style TargetType="datavis:Legend">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource PhoneForegroundBrush}"/>
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ChartAreaStyle">
+            <Setter.Value>
+                <Style TargetType="Panel">
+                    <Setter Property="MinWidth" Value="100" />
+                    <Setter Property="MinHeight" Value="75" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="PlotAreaStyle">
+            <Setter.Value>
+                <Style TargetType="Grid">
+                    <Setter Property="Background" Value="Transparent"/>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template" Value="{StaticResource PhoneChartPortraitTemplate}"/>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,65 @@
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\ApplicationIcon.png
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\Background.png
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\AppManifest.xaml
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\DataVisualizationOnWindowsPhone.xap
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\System.Windows.Controls.dll
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\App.g.i.cs
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\MainPage.g.i.cs
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\DataVisualizationOnWindowsPhone.g.resources
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\XapCacheFile.xml
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\Bin\Debug\AmCharts.Windows.QuickCharts.WP.dll
+C:\Users\jasdeepg\Downloads\DataVisualizationOnWindowsPhone\obj\Debug\Chart.g.i.cs
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\ApplicationIcon.png
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\Background.png
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\AmCharts.Windows.QuickCharts.WP.dll
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\System.Windows.Controls.dll
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\App.g.i.cs
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\Chart.g.i.cs
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\MainPage.g.i.cs
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\DataVisualizationOnWindowsPhone.g.resources
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\AppManifest.xaml
+C:\Users\ccs\Desktop\sample\sample\Bin\Debug\DataVisualizationOnWindowsPhone.xap
+C:\Users\ccs\Desktop\sample\sample\obj\Debug\XapCacheFile.xml
+C:\Users\jasdeepg\Downloads\sample (1)\sample\Bin\Debug\ApplicationIcon.png
+C:\Users\jasdeepg\Downloads\sample (1)\sample\Bin\Debug\Background.png
+C:\Users\jasdeepg\Downloads\sample (1)\sample\Bin\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\jasdeepg\Downloads\sample (1)\sample\Bin\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\jasdeepg\Downloads\sample (1)\sample\Bin\Debug\AmCharts.Windows.QuickCharts.WP.dll
+C:\Users\jasdeepg\Downloads\sample (1)\sample\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\jasdeepg\Downloads\sample (1)\sample\Bin\Debug\System.Windows.Controls.dll
+C:\Users\jasdeepg\Downloads\sample (1)\sample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jasdeepg\Downloads\sample (1)\sample\obj\Debug\App.g.i.cs
+C:\Users\jasdeepg\Downloads\sample (1)\sample\obj\Debug\Chart.g.i.cs
+C:\Users\jasdeepg\Downloads\sample (1)\sample\obj\Debug\MainPage.g.i.cs
+C:\Users\jasdeepg\Downloads\sample (1)\sample\obj\Debug\DataVisualizationOnWindowsPhone.g.resources
+C:\Users\jasdeepg\Downloads\sample (1)\sample\obj\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\jasdeepg\Downloads\sample (1)\sample\obj\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\ApplicationIcon.png
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\Background.png
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\AppManifest.xaml
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\DataVisualizationOnWindowsPhone.xap
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\AmCharts.Windows.QuickCharts.WP.dll
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\jasdeepg\Desktop\workspace\sample\Bin\Debug\System.Windows.Controls.dll
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\App.g.i.cs
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\Chart.g.i.cs
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\MainPage.g.i.cs
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\DataVisualizationOnWindowsPhone.g.resources
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\DataVisualizationOnWindowsPhone.dll
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\DataVisualizationOnWindowsPhone.pdb
+C:\Users\jasdeepg\Desktop\workspace\sample\obj\Debug\XapCacheFile.xml
